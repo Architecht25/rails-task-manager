@@ -1,4 +1,10 @@
 <h2><%= @task.title %></h2>
+<% if notice %>
+  <div class="alert alert-success">
+    <%= notice %>
+  </div>
+<% end %>
+
 <p><%= @task.details %></p>
 <p><%= @task.completed %></p>
 
