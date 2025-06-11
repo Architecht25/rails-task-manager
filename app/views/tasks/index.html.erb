@@ -7,8 +7,7 @@
 
       <%= link_to "🗑️ Supprimer",
         task_path(task),
-        method: :delete,
-        data: { turbo_confirm: "Êtes-vous sûr de vouloir supprimer cette tâche ?" } %>
+        data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer cette tâche ?" } %>
     </li>
   <% end %>
 </ul>

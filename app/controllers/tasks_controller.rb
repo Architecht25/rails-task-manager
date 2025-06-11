@@ -35,7 +35,7 @@ class TasksController < ApplicationController
 
   def destroy
     @task.destroy
-    redirect_to tasks_path, notice: "Tâche supprimée avec succès !", status: :see_other
+    redirect_to root_path, notice: "Tâche supprimée avec succès !", status: :see_other
   end
 end
 
